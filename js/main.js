@@ -31,7 +31,4 @@ $('#main_input').submit((e) => {
             }
             break;
     }
-
-
-    console.log();
 });
