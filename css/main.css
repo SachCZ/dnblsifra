@@ -2,39 +2,37 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.outer {
-    display: table;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 75%;
-    width: 100%;
-}
-
-.middle {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-#inner {
-    margin-left: auto;
-    margin-right: auto;
-    width: 600px;
-    text-align: center;
+#wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #text {
     text-align: center;
 }
 
-#input_field {
+#main_input {
     text-align: center;
-    width: 400px;
+    width: 75%;
+    max-width: 400px;
+    min-width: 200px;
+}
+
+#input_field {
+    box-sizing: border-box;
+    text-align: center;
     font-size: large;
+    width: 100%;
 }
 
 #image {
-    width: 600px;
+    max-width: 100%;
+}
+
+#image_box {
+    max-width: 600px;
 }
 
 #clickable{
