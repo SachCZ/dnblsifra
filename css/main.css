@@ -3,7 +3,7 @@ body {
 }
 
 #wrapper {
-    margin: 0 auto;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,6 +11,7 @@ body {
 
 #text {
     text-align: center;
+    max-width: 400px;
 }
 
 #main_input {
