@@ -37,7 +37,18 @@ $('#main_input').submit((e) => {
             }
             break;
         case 2:
-            if (submitted === "3089") {
+            if (submitted === "3089"){
+                image.hide();
+                $('#text').text("Kuchařka v Lomech u Kunžaku byla paní _____. Odpověď napište malými písmeny " +
+                    "bez háčků a čárek. ");
+                field.val('');
+                stage = 3;
+            } else {
+                sayNope();
+            }
+            break;
+        case 3:
+            if (submitted === "cachodska" || submitted === "cachotska") {
                 image.remove();
                 $('#text').text("50°06'08.0\"N 14°21'57.4\"E");
                 $('#clickable').remove();
@@ -46,5 +57,6 @@ $('#main_input').submit((e) => {
                 sayNope();
             }
             break;
+
     }
 });
