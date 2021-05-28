@@ -49,10 +49,11 @@ $('#main_input').submit((e) => {
             break;
         case 3:
             if (submitted === "cachodska" || submitted === "cachotska") {
-                image.remove();
+                image.show();
+                image.attr('src', 'img/sloup.jpg');
                 field.val('');
-                $('#text').text("Číslo na stále existujícím sloupu první trolejbusové trati provozované v letech " +
-                    "1936 a- 1959 je:");
+                $('#text').text("Číslo na stále existujícím sloupu první trolejbusové trati v Praze provozované v letech " +
+                    "1936 až 1959 je:");
                 stage = 4;
             } else {
                 sayNope();
@@ -60,6 +61,7 @@ $('#main_input').submit((e) => {
             break;
         case 4:
             if (submitted === "606984") {
+                image.remove();
                 $('#text').text("50°06'08.0\"N 14°21'57.4\"E");
                 $('#clickable').remove();
                 field.remove();
