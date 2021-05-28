@@ -52,8 +52,8 @@ $('#main_input').submit((e) => {
                 image.show();
                 image.attr('src', 'img/sloup.jpg');
                 field.val('');
-                $('#text').text("Číslo na stále existujícím sloupu první trolejbusové trati v Praze provozované v letech " +
-                    "1936 až 1959 je:");
+                $('#text').text("Číslo na stále existujícím sloupu první trolejbusové trati v Praze, provozované v letech " +
+                    "1936 až 1959, je:");
                 stage = 4;
             } else {
                 sayNope();
