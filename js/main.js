@@ -15,7 +15,7 @@ $('#main_input').submit((e) => {
             if (submitted === "2421") {
                 image.hide();
                 $('#text').text("Jak musí Áňa vykrmit Matěje, aby se pod ním 3m dlouhé prkno " +
-                    "o šířce 0.5m a výšce 40mm prohnulo o 18mm. Modul pružnosti prkna je 11GPa. Uvažujte prkno " +
+                    "o šířce 0.5m a výšce 40mm prohnulo o 21.6mm. Modul pružnosti prkna je 11GPa. Uvažujte prkno " +
                     "podepřené jako prostý nosník a tíhové zrychlení zaokrouhlené na celá čísla. " +
                     "Vlastní tíhu prkna zanedbejte. " +
                     "Kód je přesný výsledek v kilogramech napsaný bez desetinné čárky.");
