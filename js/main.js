@@ -50,13 +50,18 @@ $('#main_input').submit((e) => {
         case 3:
             if (submitted === "cachodska" || submitted === "cachotska") {
                 image.remove();
-                $('#text').text("50°06'08.0\"N 14°21'57.4\"E");
-                $('#clickable').remove();
-                field.remove();
+                $('#text').text("Číslo na stále existujícím sloupu první trolejbusové trati provozované v letech " +
+                    "1936 a- 1959 je:");
+                stage = 4;
             } else {
                 sayNope();
             }
             break;
-
+        case 4:
+            if (submitted === "606984") {
+                $('#text').text("50°06'08.0\"N 14°21'57.4\"E");
+                $('#clickable').remove();
+                field.remove();
+            }
     }
 });
