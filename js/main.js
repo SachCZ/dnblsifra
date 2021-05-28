@@ -65,6 +65,8 @@ $('#main_input').submit((e) => {
                 $('#text').text("50°06'08.0\"N 14°21'57.4\"E");
                 $('#clickable').remove();
                 field.remove();
+            } else {
+                sayNope();
             }
     }
 });
