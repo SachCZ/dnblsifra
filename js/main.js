@@ -50,6 +50,7 @@ $('#main_input').submit((e) => {
         case 3:
             if (submitted === "cachodska" || submitted === "cachotska") {
                 image.remove();
+                field.val('');
                 $('#text').text("Číslo na stále existujícím sloupu první trolejbusové trati provozované v letech " +
                     "1936 a- 1959 je:");
                 stage = 4;
